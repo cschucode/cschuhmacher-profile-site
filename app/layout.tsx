@@ -14,16 +14,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://chrisschuhmacher.com"),
   title: "Chris Schuhmacher | Software Engineer",
   description:
-    "Personal portfolio of Chris Schuhmacher, a software engineer building thoughtful software solutions.",
+    "Senior Frontend / Product Engineer with 8+ years building scalable web applications with React and TypeScript.",
   openGraph: {
     title: "Chris Schuhmacher | Software Engineer",
     description:
-      "Personal portfolio of Chris Schuhmacher, a software engineer building thoughtful software solutions.",
+      "Senior Frontend / Product Engineer with 8+ years building scalable web applications with React and TypeScript.",
     url: "https://chrisschuhmacher.com",
     siteName: "Chris Schuhmacher",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Chris Schuhmacher | Software Engineer",
+    description:
+      "Senior Frontend / Product Engineer with 8+ years building scalable web applications with React and TypeScript.",
   },
 };
 
