@@ -1,6 +1,6 @@
 const experiences = [
   {
-    title: "Engineering Lead (Volunteer)",
+    title: "Engineering Lead (Contract)",
     company: "Dignifi",
     period: "Jan 2025 - Present",
     description:
