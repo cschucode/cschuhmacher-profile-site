@@ -14,9 +14,9 @@ const experiences = [
     title: "Senior Software Engineer",
     company: "Fanstake",
     period: "Oct 2024 - Nov 2025",
-    context: "Early-stage startup building fan engagement tools for athletes, teams, and schools.",
+    context: "Platform transforming college athletics through fan-driven NIL deals, with $10M+ in stakeholder commitments.",
     description:
-      "Shipped end-to-end product features across athlete and team profiles in a fast-moving startup environment. Partnered closely with product and design to build responsive TypeScript interfaces using HTMX and Alpine.js, balancing speed with reliability during launch prep.",
+      "Shipped end-to-end product features across athlete, team, and school profiles in a fast-moving startup founded by LinkedIn and Headspace veterans. Built responsive TypeScript interfaces using HTMX and Alpine.js, partnering with product and design to launch fan engagement experiences.",
     tags: ["TypeScript", "HTMX", "Alpine.js", "Startup"],
   },
   {
