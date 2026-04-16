@@ -92,13 +92,14 @@ export default async function Image() {
           </div>
           <div
             style={{
-              fontSize: "20px",
+              fontSize: "22px",
               color: "#6b7280",
               marginTop: "20px",
               lineHeight: 1.5,
+              fontStyle: "italic",
             }}
           >
-            8+ years building scalable web applications with React and TypeScript
+            Big tech experience, mission-driven focus.
           </div>
         </div>
       </div>
