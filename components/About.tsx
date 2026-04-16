@@ -4,16 +4,22 @@ export default function About() {
       <h2 className="text-3xl font-bold text-gray-900 mb-8">About</h2>
       <div className="max-w-2xl text-gray-600 space-y-4">
         <p>
-          {/* Add your bio here */}
-          I'm a software engineer passionate about building clean, efficient,
-          and user-friendly applications. With experience across the full stack,
-          I enjoy solving complex problems and creating tools that make a
-          difference.
+          I'm a Senior Frontend / Product Engineer with 7+ years of experience
+          building scalable web applications using React and TypeScript. I have
+          a proven track record leading UI architecture, shipping high-impact
+          product features, and collaborating closely with design and product
+          teams to deliver user-focused experiences.
         </p>
         <p>
-          {/* Add more about yourself */}
-          When I'm not coding, you can find me exploring new technologies,
-          contributing to open source, or enjoying the outdoors.
+          My toolkit spans the full stack—from React, Next.js, and TypeScript on
+          the frontend to Node.js, Ruby on Rails, and PostgreSQL on the backend.
+          I'm also deeply invested in AI-assisted development workflows using
+          tools like Claude Code, Cursor, and GitHub Copilot.
+        </p>
+        <p>
+          Currently, I'm leading engineering for Dignifi, an AI-powered Reentry
+          Navigator helping formerly incarcerated individuals discover housing,
+          employment, and essential services.
         </p>
       </div>
     </section>

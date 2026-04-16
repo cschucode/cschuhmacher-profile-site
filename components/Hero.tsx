@@ -6,11 +6,12 @@ export default function Hero() {
         Chris Schuhmacher
       </h1>
       <h2 className="text-2xl md:text-3xl text-gray-600 mb-6">
-        Software Engineer
+        Senior Frontend / Product Engineer
       </h2>
       <p className="text-lg text-gray-500 max-w-xl">
-        {/* Add your tagline here */}
-        Building thoughtful software solutions.
+        7+ years building scalable web applications with React and TypeScript.
+        Passionate about UI architecture, high-impact product features, and
+        user-focused experiences.
       </p>
     </section>
   );

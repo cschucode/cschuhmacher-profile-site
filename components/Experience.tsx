@@ -1,24 +1,31 @@
 const experiences = [
   {
-    title: "Senior Software Engineer",
-    company: "Company Name",
-    period: "2022 - Present",
+    title: "Engineering Lead (Volunteer)",
+    company: "Dignifi",
+    period: "Jan 2025 - Present",
     description:
-      "Brief description of your role and key accomplishments. Technologies used, impact made, etc.",
+      "Leading engineering for an AI-powered Reentry Navigator helping formerly incarcerated individuals discover housing, employment, and essential services. Architecting React + TypeScript frontend for LLM-powered resource discovery.",
+  },
+  {
+    title: "Senior Software Engineer",
+    company: "Fanstake",
+    period: "Oct 2024 - Nov 2025",
+    description:
+      "Delivered end-to-end product features across athlete, team, and school profile surfaces. Built responsive TypeScript interfaces using HTMX and Alpine.js in an early-stage startup environment.",
+  },
+  {
+    title: "Software Engineer II",
+    company: "Checkr",
+    period: "Oct 2021 - Apr 2024",
+    description:
+      "Led migration of legacy Angular app to React + TypeScript, reducing development time by ~30%. Mentored 5+ engineers and drove DORA metrics improvements for deployment velocity.",
   },
   {
     title: "Software Engineer",
-    company: "Previous Company",
-    period: "2020 - 2022",
+    company: "FANDOM",
+    period: "Oct 2017 - Apr 2021",
     description:
-      "Brief description of your role and key accomplishments. Technologies used, impact made, etc.",
-  },
-  {
-    title: "Junior Developer",
-    company: "First Company",
-    period: "2018 - 2020",
-    description:
-      "Brief description of your role and key accomplishments. Technologies used, impact made, etc.",
+      "Built interactive React + Redux features powering real-time engagement across high-traffic fandom communities. Led HTTPS migration ensuring zero-downtime transition for millions of daily users.",
   },
 ];
 
