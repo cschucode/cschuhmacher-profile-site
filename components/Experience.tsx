@@ -4,6 +4,7 @@ const experiences = [
   {
     title: "Engineering Lead (Contract)",
     company: "Dignifi",
+    url: "https://dignifi.org",
     period: "Jan 2025 - Present",
     context: "AI-powered platform helping formerly incarcerated individuals find housing, employment, and essential services.",
     description:
@@ -13,6 +14,7 @@ const experiences = [
   {
     title: "Senior Software Engineer",
     company: "Fanstake",
+    url: "https://fanstake.com",
     period: "Oct 2024 - Nov 2025",
     context: "Platform transforming college athletics through fan-driven NIL deals, with $10M+ in stakeholder commitments.",
     description:
@@ -22,6 +24,7 @@ const experiences = [
   {
     title: "Software Engineer II",
     company: "Checkr",
+    url: "https://checkr.com",
     period: "Oct 2021 - Apr 2024",
     context: "Enterprise background check platform processing millions of checks for companies like Uber, Instacart, and DoorDash.",
     description:
@@ -31,6 +34,7 @@ const experiences = [
   {
     title: "Software Engineer",
     company: "FANDOM",
+    url: "https://fandom.com",
     period: "Oct 2017 - Apr 2021",
     context: "The world's largest fan platform, home to 250K+ wikis and 350M+ monthly visitors.",
     description:
@@ -61,7 +65,14 @@ export default function Experience() {
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                     {exp.title}
                   </h3>
-                  <p className="text-blue-600 dark:text-blue-400 font-medium">{exp.company}</p>
+                  <a
+                    href={exp.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 dark:text-blue-400 font-medium hover:underline"
+                  >
+                    {exp.company} ↗
+                  </a>
                 </div>
                 <span className="text-gray-400 dark:text-gray-500 text-sm mt-1 md:mt-0">
                   {exp.period}
