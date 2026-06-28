@@ -25,7 +25,7 @@ export default function Home() {
         <Contact />
         <footer className="full-bleed bg-(--color-surface-footer) border-t border-(--color-border) mt-12">
           <div className="max-w-5xl mx-auto px-6 md:px-8 py-12 text-center text-(--color-text-muted) text-sm">
-            &copy; {new Date().getFullYear()} Chris Schuhmacher &middot; Fitness Monkey LLC
+            &copy; {new Date().getFullYear()}{" "}Chris Schuhmacher &middot; Fitness Monkey LLC
           </div>
         </footer>
       </main>
