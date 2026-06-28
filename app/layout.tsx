@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Chris Schuhmacher — From rock bottom to building second chances",
     description:
-      "AI builder, founder of Fitness Monkey, and Last Mile mentor. 26 years sober.",
+      "AI builder, founder of Fitness Monkey, and Last Mile mentor — helping others find their way back.",
     url: "https://chrisschuhmacher.com",
     siteName: "Chris Schuhmacher",
     type: "website",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Chris Schuhmacher — From rock bottom to building second chances",
     description:
-      "AI builder, founder of Fitness Monkey, and Last Mile mentor. 26 years sober.",
+      "AI builder, founder of Fitness Monkey, and Last Mile mentor — helping others find their way back.",
   },
 };
 
