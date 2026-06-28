@@ -14,11 +14,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://chrisschuhmacher.com"),
-  title: "Chris Schuhmacher | From a prison cell to building second chances",
+  title: "Chris Schuhmacher | From rock bottom to building second chances",
   description:
     "26 years sober. 17 years served. A decade in tech. AI builder, founder of Fitness Monkey, and Last Mile mentor — using technology and recovery to help others find their way back.",
   openGraph: {
-    title: "Chris Schuhmacher — From a prison cell to building second chances",
+    title: "Chris Schuhmacher — From rock bottom to building second chances",
     description:
       "AI builder, founder of Fitness Monkey, and Last Mile mentor. 26 years sober.",
     url: "https://chrisschuhmacher.com",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Chris Schuhmacher — From a prison cell to building second chances",
+    title: "Chris Schuhmacher — From rock bottom to building second chances",
     description:
       "AI builder, founder of Fitness Monkey, and Last Mile mentor. 26 years sober.",
   },
