@@ -2,6 +2,16 @@ import ScrollReveal from "./ScrollReveal";
 
 const experiences = [
   {
+    title: "Founder",
+    company: "Fitness Monkey",
+    url: "https://www.fitnessmonkey.org",
+    period: "2025 - Present",
+    context: "A recovery-and-fitness app pairing sobriety tracking with workouts — plus a growing community across Instagram, TikTok, YouTube, and Substack.",
+    description:
+      "Building Fitness Monkey from the ground up: designing and shipping the app (sobriety tracking, workout logging, daily reflections, and AI-powered insights), creating workout and recovery content across four platforms, and coaching clients one-on-one as a personal trainer.",
+    tags: ["Founder", "Personal Training", "Content", "Community"],
+  },
+  {
     title: "Engineering Lead (Contract)",
     company: "Dignifi",
     url: "https://dignifi.org",
@@ -41,49 +51,61 @@ const experiences = [
       "Built interactive React + Redux features powering real-time engagement across high-traffic communities. Led the HTTPS migration and domain consolidation to fandom.com—zero-downtime transition for millions of daily users. Won company hackathon for improving user registration flow.",
     tags: ["React", "Redux", "Scale", "Performance"],
   },
+  {
+    title: "Alumnus & Mentor",
+    company: "The Last Mile",
+    url: "https://thelastmile.org",
+    period: "2014 - Present",
+    context: "The nonprofit that taught me software engineering inside San Quentin — now I help teach the next class.",
+    description:
+      "Learned to code through The Last Mile while incarcerated, then turned it into a decade-long tech career. Today I give back as an alumnus mentor, supporting justice-impacted engineers as they build their own paths into the industry.",
+    tags: ["Mentorship", "The Last Mile", "Giving Back"],
+  },
 ];
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-20">
+    <section id="experience" className="py-20 md:py-28">
       <ScrollReveal>
-        <div className="flex items-center gap-4 mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Experience</h2>
-          <div className="flex-1 h-px bg-gradient-to-r from-gray-200 dark:from-gray-700 to-transparent" />
+        <div className="flex items-center gap-4 mb-10 md:mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-(--color-text-primary)">
+            Work
+          </h2>
+          <div className="flex-1 h-px bg-linear-to-r from-(--color-border-strong) to-transparent" />
         </div>
       </ScrollReveal>
 
       <div className="space-y-12">
         {experiences.map((exp, index) => (
           <ScrollReveal key={index} delay={index * 0.1}>
-            <div className="group relative pl-8 border-l-2 border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-500 transition-colors">
+            <div className="group relative pl-8 border-l-2 border-(--color-border-strong) hover:border-(--color-accent-text) transition-colors">
               {/* Timeline dot */}
-              <div className="absolute left-[-9px] top-0 w-4 h-4 rounded-full bg-white dark:bg-gray-900 border-2 border-gray-300 dark:border-gray-600 group-hover:border-blue-400 dark:group-hover:border-blue-500 group-hover:bg-blue-50 dark:group-hover:bg-blue-900/30 transition-colors" />
+              <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-(--color-surface-base) border-2 border-(--color-border-strong) group-hover:border-(--color-accent-text) group-hover:bg-accent-text/20 transition-colors" />
 
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-2">
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                  <h3 className="text-xl font-semibold text-(--color-text-primary)">
                     {exp.title}
                   </h3>
                   <a
                     href={exp.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 dark:text-blue-400 font-medium hover:underline"
+                    className="text-(--color-accent-text) font-medium hover:text-(--color-fm-light) hover:underline underline-offset-2"
                   >
                     {exp.company} ↗
                   </a>
                 </div>
-                <span className="text-gray-400 dark:text-gray-500 text-sm mt-1 md:mt-0">
+                <span className="text-(--color-text-muted) text-sm mt-1 md:mt-0">
                   {exp.period}
                 </span>
               </div>
 
-              <p className="text-sm text-gray-500 dark:text-gray-400 italic mb-3">
+              <p className="text-sm text-(--color-text-muted) italic mb-3">
                 {exp.context}
               </p>
 
-              <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+              <p className="text-(--color-text-secondary) mb-4 leading-relaxed max-w-[68ch]">
                 {exp.description}
               </p>
 
@@ -91,7 +113,7 @@ export default function Experience() {
                 {exp.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="px-3 py-1 text-xs font-medium text-gray-600 dark:text-gray-300 bg-gray-100 dark:bg-gray-800 rounded-full"
+                    className="px-3 py-1 text-xs font-medium text-(--color-text-secondary) bg-white/5 border border-(--color-border) rounded-full"
                   >
                     {tag}
                   </span>

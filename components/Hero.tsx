@@ -1,28 +1,28 @@
-"use client";
-
 import Image from "next/image";
-import TypeWriter from "./TypeWriter";
+import { asHeardOn } from "@/lib/media";
+
+const credentials = [
+  "26 years sober",
+  "Founder of Fitness Monkey",
+  "AI builder",
+  "Last Mile mentor",
+];
 
 export default function Hero() {
-  const roles = [
-    "Senior Frontend Engineer",
-    "Product Engineer",
-    "UI Architect",
-    "React Specialist",
-  ];
-
   return (
-    <section className="min-h-[80vh] flex flex-col justify-center relative">
-      {/* Decorative elements */}
-      <div className="absolute top-20 right-0 w-72 h-72 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-full blur-3xl opacity-60 -z-10" />
-      <div className="absolute bottom-20 left-0 w-64 h-64 bg-gradient-to-tr from-gray-100 to-slate-200 dark:from-gray-800/30 dark:to-slate-800/30 rounded-full blur-3xl opacity-50 -z-10" />
+    <section className="min-h-[88vh] flex flex-col justify-center relative">
+      {/* Subtle glow blobs */}
+      <div className="absolute inset-0 -z-10 overflow-hidden">
+        <div className="animate-gradient absolute -top-24 -right-[10%] w-136 h-136 rounded-full blur-3xl opacity-20 bg-[radial-gradient(circle,var(--color-fm),transparent_70%)]" />
+        <div className="animate-gradient absolute bottom-0 -left-[10%] w-112 h-112 rounded-full blur-3xl opacity-15 bg-[radial-gradient(circle,var(--color-accent),transparent_70%)]" />
+      </div>
 
       <div className="flex flex-col md:flex-row md:items-center md:gap-12">
         {/* Photo */}
         <div className="mb-8 md:mb-0 md:order-2 flex-shrink-0">
-          <div className="relative w-48 h-48 md:w-56 md:h-56">
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-2xl rotate-6 opacity-20" />
-            <div className="relative w-full h-full rounded-2xl overflow-hidden border-2 border-gray-100 dark:border-gray-700 shadow-lg bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-700">
+          <div className="relative w-48 h-48 md:w-64 md:h-64">
+            <div className="absolute inset-0 bg-linear-to-br from-(--color-accent) to-(--color-fm) rounded-2xl rotate-6 opacity-30" />
+            <div className="relative w-full h-full rounded-2xl overflow-hidden border-2 border-(--color-border-strong) shadow-xl bg-(--color-surface-card)">
               <Image
                 src="/headshot.jpg"
                 alt="Chris Schuhmacher"
@@ -36,35 +36,58 @@ export default function Hero() {
 
         {/* Text content */}
         <div className="md:order-1">
-          <p className="text-blue-600 dark:text-blue-400 font-medium mb-2">
-            Hi, I'm
-          </p>
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-(--color-text-muted) mb-4">
             Chris Schuhmacher
-          </h1>
-          <h2 className="text-2xl md:text-3xl text-gray-600 dark:text-gray-300 mb-6 h-10">
-            <TypeWriter words={roles} />
-          </h2>
-          <p className="text-lg text-gray-500 dark:text-gray-400 max-w-xl leading-relaxed">
-            8+ years building scalable web applications with React and TypeScript.
-            Passionate about UI architecture, high-impact product features, and
-            user-focused experiences.
           </p>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-(--color-text-primary) leading-[1.05] mb-6">
+            From a prison cell to{" "}
+            <span className="text-(--color-fm-light)">
+              building second chances.
+            </span>
+          </h1>
+
+          {/* Credential line */}
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-base md:text-lg text-(--color-text-secondary) mb-8">
+            {credentials.map((item, i) => (
+              <span key={item} className="flex items-center gap-3">
+                {i > 0 && (
+                  <span className="text-(--color-border-strong)">·</span>
+                )}
+                {item}
+              </span>
+            ))}
+          </div>
 
           {/* CTA buttons */}
-          <div className="flex flex-wrap gap-4 mt-8">
+          <div className="flex flex-wrap gap-4">
             <a
-              href="#experience"
-              className="px-6 py-3 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-lg font-medium hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors"
+              href="#story"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold bg-(--color-fm) text-(--color-fm-navy-dark) hover:bg-(--color-amber-hover) active:bg-(--color-amber-press) transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--color-focus-ring) focus-visible:ring-offset-2 focus-visible:ring-offset-(--color-surface-base)"
             >
-              View Experience
+              My Story
+            </a>
+            <a
+              href="#fitness-monkey"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-medium border border-(--color-border-strong) text-(--color-text-secondary) hover:border-(--color-fm) hover:text-(--color-text-primary) hover:bg-white/5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--color-focus-ring) focus-visible:ring-offset-2 focus-visible:ring-offset-(--color-surface-base)"
+            >
+              Fitness Monkey
             </a>
             <a
               href="#contact"
-              className="px-6 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg font-medium hover:border-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-medium border border-(--color-border-strong) text-(--color-text-secondary) hover:border-(--color-fm) hover:text-(--color-text-primary) hover:bg-white/5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--color-focus-ring) focus-visible:ring-offset-2 focus-visible:ring-offset-(--color-surface-base)"
             >
               Get in Touch
             </a>
+          </div>
+
+          {/* As heard on */}
+          <div className="mt-10">
+            <p className="text-xs font-semibold uppercase tracking-wider text-(--color-text-muted) mb-2">
+              As heard on
+            </p>
+            <p className="text-sm text-(--color-text-secondary)">
+              {asHeardOn.join("  ·  ")}
+            </p>
           </div>
         </div>
       </div>

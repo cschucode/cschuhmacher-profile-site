@@ -1,10 +1,40 @@
 @import "tailwindcss";
 
-@variant dark (&:where(.dark, .dark *));
-
 @theme inline {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* --- Surfaces (navy scale: higher elevation = lighter) --- */
+  --color-surface-base: #16212f; /* page canvas */
+  --color-surface-raised: #1b2838; /* alt section band */
+  --color-surface-card: #25364a; /* cards */
+  --color-surface-elevated: #2c3e54; /* card hover / FM band body */
+  --color-surface-footer: #121a25; /* deepest */
+
+  /* --- Text on dark --- */
+  --color-text-primary: #f4f6f8; /* headings, emphasis */
+  --color-text-secondary: #c4cdd8; /* body copy */
+  --color-text-muted: #8b97a6; /* labels, captions, meta */
+
+  /* --- Borders / hairlines --- */
+  --color-border: #2a3a4f;
+  --color-border-strong: #34465e;
+
+  /* --- Accents (amber brand) --- */
+  --color-fm: #f2a53c; /* amber primary */
+  --color-fm-light: #f8c06b; /* amber hover / light text */
+  --color-fm-dark: #b5731a; /* amber for text on LIGHT bg only (resume) */
+  --color-fm-navy: #2c3e54;
+  --color-fm-navy-dark: #1f2d3d;
+  --color-amber-hover: #f8c06b;
+  --color-amber-press: #e0913a;
+
+  /* --- Secondary accent (blue / tech) --- */
+  --color-accent: #2563eb; /* solid blue fills */
+  --color-accent-text: #60a5fa; /* blue text/links on dark */
+
+  /* --- Focus --- */
+  --color-focus-ring: #f8c06b;
 }
 
 html {
@@ -15,7 +45,37 @@ body {
   font-family: var(--font-sans), system-ui, sans-serif;
 }
 
-/* Smooth transitions for dark mode */
-* {
-  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+/* Full-bleed: lets a section span the full viewport width inside a centered
+   container. Relies on body overflow-x-hidden to clip the scrollbar sliver. */
+.full-bleed {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+/* Slow animated gradient backdrop for hero / band glows. */
+@keyframes gradient-pan {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-pan 12s ease infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-gradient {
+    animation: none;
+  }
 }

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -15,22 +14,22 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://chrisschuhmacher.com"),
-  title: "Chris Schuhmacher | Software Engineer",
+  title: "Chris Schuhmacher | From a prison cell to building second chances",
   description:
-    "Big tech experience, mission-driven focus. Senior Frontend Engineer building scalable web applications with React and TypeScript.",
+    "26 years sober. 17 years served. A decade in tech. AI builder, founder of Fitness Monkey, and Last Mile mentor — using technology and recovery to help others find their way back.",
   openGraph: {
-    title: "Chris Schuhmacher | Software Engineer",
+    title: "Chris Schuhmacher — From a prison cell to building second chances",
     description:
-      "Big tech experience, mission-driven focus.",
+      "AI builder, founder of Fitness Monkey, and Last Mile mentor. 26 years sober.",
     url: "https://chrisschuhmacher.com",
     siteName: "Chris Schuhmacher",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Chris Schuhmacher | Software Engineer",
+    title: "Chris Schuhmacher — From a prison cell to building second chances",
     description:
-      "Big tech experience, mission-driven focus.",
+      "AI builder, founder of Fitness Monkey, and Last Mile mentor. 26 years sober.",
   },
 };
 
@@ -43,26 +42,8 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}
-      suppressHydrationWarning
     >
-      <head>
-        <Script
-          id="theme-script"
-          strategy="beforeInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                const saved = localStorage.getItem('theme');
-                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                if (saved === 'dark' || (!saved && prefersDark)) {
-                  document.documentElement.classList.add('dark');
-                }
-              })();
-            `,
-          }}
-        />
-      </head>
-      <body className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors">
+      <body className="bg-(--color-surface-base) text-(--color-text-secondary) overflow-x-hidden">
         {children}
       </body>
     </html>
