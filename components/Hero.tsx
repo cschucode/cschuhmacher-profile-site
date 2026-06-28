@@ -2,7 +2,6 @@ import Image from "next/image";
 import { asHeardOn } from "@/lib/media";
 
 const credentials = [
-  "26 years sober",
   "Founder of Fitness Monkey",
   "AI builder",
   "Last Mile mentor",

@@ -110,7 +110,7 @@ export default async function Image() {
               lineHeight: 1.5,
             }}
           >
-            26 years sober · Founder of Fitness Monkey · AI builder
+            Founder of Fitness Monkey · AI builder · Last Mile mentor
           </div>
         </div>
       </div>
