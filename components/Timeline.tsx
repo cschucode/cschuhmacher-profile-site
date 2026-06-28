@@ -17,6 +17,11 @@ const milestones = [
     body: "Joined The Last Mile, San Quentin's software engineering program, and found a craft that would change everything.",
   },
   {
+    year: "Inside the walls",
+    title: "Two marathons, 105 laps each",
+    body: "Found endurance running with the 1000 Mile Club and finished two marathons inside San Quentin — 26.2 miles around a quarter-mile yard, one lap at a time.",
+  },
+  {
     year: "2017",
     title: "Came home",
     body: "Paroled after 17 years. Started my software career at FANDOM within weeks of release.",
@@ -29,7 +34,7 @@ const milestones = [
   {
     year: "Today",
     title: "Building second chances",
-    body: "AI products for reentry at Dignifi, founder of Fitness Monkey, and a Last Mile mentor — giving back the gift I was given.",
+    body: "AI products for reentry at Dignifi, founder of Fitness Monkey, a Last Mile mentor, and a 1000 Mile Club volunteer coaching runners back inside San Quentin — giving back the gift I was given.",
   },
 ];
 

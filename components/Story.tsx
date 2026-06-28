@@ -38,7 +38,17 @@ export default function Story() {
             >
               The Last Mile
             </a>{" "}
-            inside San Quentin. I walked out in 2017 with a new purpose.
+            inside San Quentin. I also found running there, finishing{" "}
+            <a
+              href="https://www.sanquentinmarathon.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-(--color-accent-text) hover:text-(--color-fm-light) hover:underline underline-offset-2"
+            >
+              two marathons inside the walls
+            </a>{" "}
+            — 105 laps of the prison yard, one at a time. I walked out in 2017
+            with a new purpose.
           </p>
           <p>
             A decade into a tech career, I now build AI products for reentry at{" "}
@@ -48,8 +58,28 @@ export default function Story() {
             <span className="font-medium text-(--color-fm-light)">
               Fitness Monkey
             </span>{" "}
-            to help people pair recovery with fitness. I walked this path — now I
-            help build the ladder for the people still on it.
+            to help people pair recovery with fitness. I never stopped running,
+            either — since coming home I've finished Marin's{" "}
+            <a
+              href="https://www.dipsea.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-(--color-accent-text) hover:text-(--color-fm-light) hover:underline underline-offset-2"
+            >
+              Dipsea Race
+            </a>{" "}
+            nine years straight. And from my home there, I still go back inside
+            San Quentin to coach the{" "}
+            <a
+              href="https://www.sanquentinmarathon.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-(--color-accent-text) hover:text-(--color-fm-light) hover:underline underline-offset-2"
+            >
+              1000 Mile Club
+            </a>{" "}
+            and remind the team of the best version of themselves. I walked this
+            path — now I help build the ladder for the people still on it.
           </p>
         </div>
       </ScrollReveal>

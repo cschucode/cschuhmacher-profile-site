@@ -4,7 +4,7 @@ const skills = [
   { category: "Frontend", items: ["React", "TypeScript", "Next.js", "Tailwind"] },
   { category: "Backend", items: ["Node.js", "Rails", "PostgreSQL", "GraphQL"] },
   { category: "Tools", items: ["Claude Code", "Cursor", "Copilot", "Docker"] },
-  { category: "Beyond Code", items: ["Personal Training", "Programming", "Mobility", "Content"] },
+  { category: "Beyond Code", items: ["Personal Training", "Endurance Running", "Mobility", "Content"] },
 ];
 
 export default function About() {
