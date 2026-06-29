@@ -3,7 +3,7 @@ import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 
 export const runtime = "nodejs";
-export const alt = "Chris Schuhmacher - Senior Frontend / Product Engineer";
+export const alt = "Chris Schuhmacher - From rock bottom to building second chances";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -83,23 +83,34 @@ export default async function Image() {
           </div>
           <div
             style={{
-              fontSize: "28px",
-              color: "#9ca3af",
-              lineHeight: 1.4,
+              display: "flex",
+              fontSize: "30px",
+              color: "#e5e7eb",
+              lineHeight: 1.3,
             }}
           >
-            Senior Frontend / Product Engineer
+            From rock bottom to
           </div>
           <div
             style={{
-              fontSize: "22px",
-              color: "#6b7280",
-              marginTop: "20px",
-              lineHeight: 1.5,
-              fontStyle: "italic",
+              display: "flex",
+              fontSize: "30px",
+              color: "#f2a53c",
+              lineHeight: 1.3,
+              fontWeight: 600,
             }}
           >
-            Big tech experience, mission-driven focus.
+            building second chances.
+          </div>
+          <div
+            style={{
+              fontSize: "20px",
+              color: "#9ca3af",
+              marginTop: "20px",
+              lineHeight: 1.5,
+            }}
+          >
+            Founder of Fitness Monkey · AI builder · Last Mile mentor
           </div>
         </div>
       </div>
