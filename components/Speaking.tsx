@@ -54,8 +54,8 @@ export default function Speaking() {
       <div className="grid sm:grid-cols-2 gap-5 md:gap-6">
         {topics.map((topic, index) => (
           <ScrollReveal key={topic.title} delay={index * 0.08}>
-            <div className="flex flex-col h-full p-6 rounded-2xl bg-(--color-surface-card) border border-(--color-border-strong)">
-              <h3 className="text-lg md:text-xl font-semibold text-(--color-text-primary) mb-2">
+            <div className="group flex flex-col h-full p-6 rounded-2xl bg-(--color-surface-card) border border-(--color-border-strong) hover:bg-(--color-surface-elevated) hover:border-fm/60 hover:-translate-y-0.5 hover:shadow-[0_10px_30px_-12px_rgba(242,165,60,0.25)] transition-all">
+              <h3 className="text-lg md:text-xl font-semibold text-(--color-text-primary) mb-2 transition-colors group-hover:text-(--color-fm-light)">
                 {topic.title}
               </h3>
               <p className="text-(--color-text-secondary) leading-relaxed">

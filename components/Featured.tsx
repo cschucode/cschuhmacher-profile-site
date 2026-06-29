@@ -20,7 +20,7 @@ export default function Featured() {
           <div className="flex-1 h-px bg-linear-to-r from-(--color-border-strong) to-transparent" />
         </div>
         <p className="text-(--color-text-secondary) mb-10 max-w-[68ch]">
-          I've been grateful to share this story on some of the conversations and
+          I&apos;ve been grateful to share this story on some of the conversations and
           publications that mean the most to me.
         </p>
       </ScrollReveal>

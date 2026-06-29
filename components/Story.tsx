@@ -88,9 +88,9 @@ export default function Story() {
           {stats.map((stat) => (
             <div
               key={stat.label}
-              className="text-center px-4 py-6 rounded-2xl bg-(--color-surface-card) border border-(--color-border-strong)"
+              className="group text-center px-4 py-6 rounded-2xl bg-(--color-surface-card) border border-(--color-border-strong) hover:bg-(--color-surface-elevated) hover:border-fm/50 hover:-translate-y-0.5 hover:shadow-[0_10px_30px_-12px_rgba(242,165,60,0.25)] transition-all"
             >
-              <div className="text-4xl md:text-5xl font-bold tabular-nums text-(--color-fm-light)">
+              <div className="text-4xl md:text-5xl font-bold tabular-nums text-(--color-fm-light) transition-transform group-hover:scale-105">
                 {stat.value}
               </div>
               <div className="mt-1 text-sm font-medium text-(--color-text-muted)">
