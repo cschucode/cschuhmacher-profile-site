@@ -4,6 +4,7 @@ import { asHeardOn } from "@/lib/media";
 const credentials = [
   "Founder of Fitness Monkey",
   "AI builder",
+  "Speaker",
   "Last Mile mentor",
 ];
 
@@ -35,6 +36,7 @@ export default function Hero() {
                   src="/headshot.jpg"
                   alt="Chris Schuhmacher"
                   fill
+                  sizes="(min-width: 768px) 256px, 192px"
                   className="object-cover"
                   priority
                 />

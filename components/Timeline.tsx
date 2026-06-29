@@ -34,7 +34,7 @@ const milestones = [
   {
     year: "Today",
     title: "Building second chances",
-    body: "AI products for reentry at Dignifi, founder of Fitness Monkey, a Last Mile mentor, and a 1000 Mile Club volunteer coaching runners back inside San Quentin — giving back the gift I was given.",
+    body: "Founder of Fitness Monkey, speaker on recovery, reentry, and technology, a Last Mile mentor, and a 1000 Mile Club volunteer coaching runners back inside San Quentin — giving back the gift I was given.",
   },
 ];
 

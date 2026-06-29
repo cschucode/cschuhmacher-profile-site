@@ -4,6 +4,7 @@ import Story from "@/components/Story";
 import Timeline from "@/components/Timeline";
 import Featured from "@/components/Featured";
 import WhatIDo from "@/components/WhatIDo";
+import Speaking from "@/components/Speaking";
 import FitnessMonkey from "@/components/FitnessMonkey";
 import About from "@/components/About";
 import Experience from "@/components/Experience";
@@ -19,6 +20,7 @@ export default function Home() {
         <Timeline />
         <Featured />
         <WhatIDo />
+        <Speaking />
         <FitnessMonkey />
         <About />
         <Experience />

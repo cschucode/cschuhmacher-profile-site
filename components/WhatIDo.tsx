@@ -38,15 +38,15 @@ const pillars: Pillar[] = [
     ),
   },
   {
-    title: "Personal Training",
+    title: "Speaking",
     blurb:
-      "1:1 coaching for strength, conditioning, and sustainable habits — tailored programming whether you're starting out or chasing a new PR.",
-    href: "#contact",
-    cta: "Train with me",
+      "Talks for companies, conferences, and nonprofits on recovery, reentry, technology, and partnership — turning a hard story into momentum for the people in the room.",
+    href: "#speaking",
+    cta: "What I speak on",
     accent: "amber",
     icon: (
       <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12h-2m-2 0h-2m-2 0H9m-2 0H5m-2 0H1m4-3v6m14-6v6M9 7v10m6-10v10" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-14 0m7 7v3m-4 0h8M12 3a3 3 0 00-3 3v5a3 3 0 006 0V6a3 3 0 00-3-3z" />
       </svg>
     ),
   },
