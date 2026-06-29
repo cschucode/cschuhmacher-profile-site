@@ -63,6 +63,12 @@ export const press: MediaItem[] = [
     title: "My Prison Identity — an essay",
     href: "https://tlm.medium.com/my-prison-identity-300ea7942173",
   },
+  {
+    show: "Stand Together",
+    title: "The Last Mile Prepares Incarcerated Individuals for Reentry",
+    href: "https://standtogether.org/stories/future-of-work/the-last-mile-prepares-incarcerated-individuals-for-reentry",
+    year: "2019",
+  },
 ];
 
 /** Short list of show names for the hero "As heard on" strip. */
