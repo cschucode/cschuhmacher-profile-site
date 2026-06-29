@@ -4,7 +4,7 @@ const skills = [
   { category: "Frontend", items: ["React", "TypeScript", "Next.js", "Tailwind"] },
   { category: "Backend", items: ["Node.js", "Rails", "PostgreSQL", "GraphQL"] },
   { category: "Tools", items: ["Claude Code", "Cursor", "Copilot", "Docker"] },
-  { category: "Beyond Code", items: ["Personal Training", "Endurance Running", "Mobility", "Content"] },
+  { category: "Beyond Code", items: ["Health & Wellness", "Endurance Running", "Mobility", "Content"] },
 ];
 
 export default function About() {
@@ -23,7 +23,7 @@ export default function About() {
         <ScrollReveal className="md:col-span-2" delay={0.1}>
           <div className="space-y-4 text-(--color-text-secondary) leading-relaxed max-w-[68ch]">
             <p>
-              I'm a product engineer and AI builder with 10 years in tech,
+              I&apos;m a product engineer and AI builder with 10 years in tech,
               building scalable web applications in React and TypeScript and,
               increasingly, LLM-powered products. I have a proven track record
               leading UI architecture, shipping high-impact features, and
@@ -33,15 +33,15 @@ export default function About() {
             <p>
               My toolkit spans the full stack—from React, Next.js, and TypeScript on
               the frontend to Node.js, Ruby on Rails, and PostgreSQL on the backend.
-              I'm also deeply invested in AI-assisted development workflows using
+              I&apos;m also deeply invested in AI-assisted development workflows using
               tools like Claude Code, Cursor, and GitHub Copilot.
             </p>
             <p>
-              Today I lead engineering for{" "}
-              <span className="text-(--color-text-primary) font-medium">Dignifi</span>,
-              an AI-powered Reentry Navigator helping formerly incarcerated
-              individuals find housing, employment, and essential services, and I
-              mentor new engineers as an alumnus of{" "}
+              The project closest to me is{" "}
+              <span className="text-(--color-text-primary) font-medium">Fitness Monkey</span>
+              {" "}— a recovery-and-fitness app I first imagined inside San
+              Quentin and am now building for real as a solo founder and
+              engineer. I also mentor new engineers as an alumnus of{" "}
               <span className="text-(--color-text-primary) font-medium">The Last Mile</span>
               {" "}— the program that taught me to code inside San Quentin.
             </p>

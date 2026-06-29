@@ -46,11 +46,12 @@ export default function Contact() {
 
           <div className="relative px-8 py-12 md:px-12">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-(--color-text-primary) mb-4">
-              Let's Connect
+              Let&apos;s Connect
             </h2>
             <p className="text-(--color-text-secondary) mb-10 max-w-[68ch] leading-relaxed">
-              Whether you want to talk engineering and consulting, train together,
-              or follow along with Fitness Monkey — I'd love to hear from you.
+              Whether you want to talk engineering and consulting, book me to
+              speak, or follow along with Fitness Monkey — I&apos;d love to hear
+              from you.
             </p>
 
             <div className="space-y-10">

@@ -37,6 +37,9 @@ its featured list from `lib/media.ts`; update that file to change what's shown.
 - **TED-Ed Blog** — "Why I'm teaching prisoners to code" (Oct 26 2018)
   - https://blog.ed.ted.com/2018/10/26/why-im-teaching-prisoners-to-code/
   - Confidence: medium (program-level coverage, not solely his profile).
+- **Stand Together** — "The Last Mile Prepares Incarcerated Individuals for Reentry" (~2019)
+  - https://standtogether.org/stories/future-of-work/the-last-mile-prepares-incarcerated-individuals-for-reentry
+  - Confidence: high — features Chris extensively (17 years served, software engineer at Fandom, The Last Mile). Cites data "as of December 2018," so published late 2018/2019.
 
 ## Could not verify / not found
 

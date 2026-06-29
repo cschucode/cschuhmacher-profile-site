@@ -8,7 +8,7 @@ const experiences = [
     period: "2025 - Present",
     context: "A recovery-and-fitness app pairing sobriety tracking with workouts — plus a growing community across Instagram, TikTok, YouTube, and Substack.",
     description:
-      "Building Fitness Monkey from the ground up: designing and shipping the app (sobriety tracking, workout logging, daily reflections, and AI-powered insights), creating workout and recovery content across four platforms, and coaching clients one-on-one as a personal trainer.",
+      "Building Fitness Monkey from the ground up: designing and shipping the app (sobriety tracking, workout logging, daily reflections, and AI-powered insights), creating workout and recovery content across four platforms, and coaching clients one-on-one.",
     tags: ["Founder", "Personal Training", "Content", "Community"],
   },
   {
